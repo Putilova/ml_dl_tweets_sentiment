@@ -1,0 +1,214 @@
+{
+	"info": {
+		"_postman_id": "d033ac83-efbf-468f-86ef-a3841a168094",
+		"name": "ml_dl_course",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "use_sklearn_model_on_google_cloud_functions_serverless",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"age\":42,\r\n    \"salary\":40000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-fast-environs-343118.cloudfunctions.net/function-1",
+					"protocol": "https",
+					"host": [
+						"us-central1-fast-environs-343118",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"function-1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "use_pytorch_model_on_google_cloud_functions_serverless",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"age\":42,\r\n    \"salary\":40000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://34.125.181.30:8005/model",
+					"protocol": "http",
+					"host": [
+						"34",
+						"125",
+						"181",
+						"30"
+					],
+					"port": "8005",
+					"path": [
+						"model"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "use_sklearn_model_on_google_colab_ipynb_w_pyngrok",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"age\":42,\r\n    \"salary\":40000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://824b-35-225-85-145.ngrok.io/predict",
+					"protocol": "http",
+					"host": [
+						"824b-35-225-85-145",
+						"ngrok",
+						"io"
+					],
+					"path": [
+						"predict"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "use_pytorch_nlp_model_on_google_colab_ipynb",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sentence\": \"mediocre by India in the match\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://11ce-34-86-238-18.ngrok.io/predict",
+					"protocol": "http",
+					"host": [
+						"11ce-34-86-238-18",
+						"ngrok",
+						"io"
+					],
+					"path": [
+						"predict"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "use_tensorflow_nlp_model_on_google_colab_ipynb",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sentence\": \"mediocre by India in the match\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://3fc5-104-197-97-109.ngrok.io/predict",
+					"protocol": "http",
+					"host": [
+						"3fc5-104-197-97-109",
+						"ngrok",
+						"io"
+					],
+					"path": [
+						"predict"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "use_tensorflow_nlp_model_on_google_cloud_functions_serverless",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sentence\": \"mediocre by India in the match\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-fast-environs-343118.cloudfunctions.net/function-2",
+					"protocol": "https",
+					"host": [
+						"us-central1-fast-environs-343118",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"function-2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "use_pytorch_nlp_model_on_google_cloud_functions_serverless",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sentence\": \"mediocre by India in the match\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-fast-environs-343118.cloudfunctions.net/function-3",
+					"protocol": "https",
+					"host": [
+						"us-central1-fast-environs-343118",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"function-3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

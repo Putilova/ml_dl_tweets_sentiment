@@ -1,0 +1,31 @@
+Linux instance-1 4.19.0-19-cloud-amd64 #1 SMP Debian 4.19.232-1 (2022-03-07) x86_64
+
+sudo apt install python3-pip
+
+pip3 install --upgrade pip setuptools wheel
+
+sudo apt install wget
+
+sudo apt install unzip
+
+pip3 install Flask
+pip3 install numpy pandas
+pip3 install torch
+pip3 install scikit-learn sklearn
+
+wget https://github.com/Putilova/ml_dl_tweets_sentiment/raw/main/sc.pickle
+
+wget https://github.com/Putilova/ml_dl_tweets_sentiment/raw/main/customer_buy_state_dict.zip
+
+unzip customer_buy_state_dict.zip
+
+vi use_torch.py
+
+Copy script from pytorch_flask.py
+
+chmod 700 use_torch.py
+
+python3 use_torch.py
+
+^C
+

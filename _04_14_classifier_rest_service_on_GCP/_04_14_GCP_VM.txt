@@ -1,0 +1,44 @@
+Linux instance-1 4.19.0-19-cloud-amd64 #1 SMP Debian 4.19.232-1 (2022-03-07) x86_64
+
+python3 --version
+
+sudo apt install python3-pip
+
+python3 -m pip install --upgrade pip
+
+#pip3 install virtualenv
+
+pip3 install --upgrade pip setuptools wheel
+
+#which python3
+## /usr/bin/python3
+
+#sudo apt-get install python3-venv
+
+#python3 -m venv ml_dl_course
+
+#source ml_dl_course/bin/activate
+
+pip3 install Flask
+pip3 install numpy pandas
+pip3 install scikit-learn sklearn
+
+sudo apt install wget
+
+wget https://github.com/Putilova/ml_dl_tweets_sentiment/raw/main/_02_07_ml_classification/classifier.pickle
+
+wget https://github.com/Putilova/ml_dl_tweets_sentiment/raw/main/_02_07_ml_classification/sc.pickle
+
+vi classifier.py
+
+Copy script from classifier_rest_service_on_GCP.py
+
+chmod 700 classifier.py
+
+python3 classifier.py
+
+^C
+#deactivate
+
+
+
