@@ -9,12 +9,7 @@ Sentiment analysis with PyTorch and TensorFlow Keras.
 Flask applications.
 
 Environment and tools:
-
-<<<<<<< HEAD
-Spyder, Visual Studio Code, Windows Power Shell. 
-=======
-Spyder / Windows Power Shell. 
->>>>>>> 900ae25f1be11b81c31395eca2383bfc179c69b2
+Spyder / Windows Power Shell.
 Google Colab, Google Drive, Google Cloud Platform (Compute Engine - VM instance, Cloud Storage, Cloud Function).
 Ngrok account.
 Twitter developer account.
@@ -394,29 +389,22 @@ Postman request: use_pytorch_nlp_model_on_google_cloud_functions_serverless
 
 ## Section 7: Deploying models on browser using JavaScript and TensorFlow.js
 
-### 40. JavaScript crash course (optional)
-
-Folder: 07_40_javascript-crash-course
-
-
-
 ### 41. Adding TensforFlow.js to a web page
 
 Folder: _07_41_tfjs1
-
-
 
 ### 42. Basic tensor operations using TensorFlow.js
 
 Folder: _07_42_tfjs2
 
-
-
 ### 43. Deploying Keras model on a web page using TensorFlow.js
 
 Folder: _07_43_tfjs4
 
+tf3_keras_age_salary_tfjs.ipynb
 
+Input files: _05_20_save_export_reload_pytorch_models/storepurchasedata_large.csv
+Output: customer_behavior_model/1 , customermodel.zip, model.json
 
 ## Section 8: Model as a mathematical formula & Model as code
 
