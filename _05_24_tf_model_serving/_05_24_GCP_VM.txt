@@ -26,13 +26,17 @@ docker run -t --rm -p 8501:8501 \
     -v "$(pwd)/customer_behavior_model:/models/customer_behavior_model" \
     -e MODEL_NAME=customer_behavior_model \
     tensorflow/serving &
+
+
+
+#################################################
 	
-Age 20 : Salary 40000
+Age 20  Salary 40000
 
 curl -d '{"instances": [[-1.43318661, -0.47466685]]}' \
     -X POST http://localhost:8501/v1/models/customer_behavior_model:predict
 
-Age 42 : Salary 50000
+Age 42  Salary 50000
 
 curl -d '{"instances": [[0.2345214460208433, 0.03675871227617118]]}' \
     -X POST http://localhost:8501/v1/models/customer_behavior_model:predict

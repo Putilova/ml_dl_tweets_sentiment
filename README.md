@@ -10,15 +10,18 @@ Flask applications.
 
 Environment and tools:
 
-Windows Power Shell / Spyder. 
+Spyder, Visual Studio Code, Windows Power Shell. 
 Google Colab, Google Drive, Google Cloud Platform (Compute Engine - VM instance, Cloud Storage, Cloud Function).
 Ngrok account.
 Twitter developer account.
 
 
 
-## To start: Creating python environment in Windows PS
+## To start: Creating python environment
 
+###  in Windows PS
+
+Create virtual environment in user's folder:
 ```
 C:\Users\admin> 
 
@@ -29,21 +32,46 @@ virtualenv nlp_course
 .\.nlp_course\Scripts\Activate.ps1
 
 pip install scipy numpy pandas sklearn matplotlib pickle requests
-
-cd .\Google Drive\Github\ml_dl_tweets_sentiment
 ```
+Deactivate or delete:
+
+```
+deactivate
+
+rm -r .nlp_course
+```
+
+### in Anaconda Powershell Prompt
+
+```
+conda create -n nlp_course
+
+conda env list
+
+conda activate nlp_course
+
+conda install scipy numpy pandas sklearn matplotlib pickle requests
+```
+
+Deactivate or delete:
+
+```
+conda deactivate
+
+env remove -n nlp_course
+```
+
+Change environment in Spyder:
+
+Spyder > Preferences > Python interpreter > Use the following Python interpreter > C:\Users\admin\Anaconda3\envs\nlp_course\python.exe
 
 ## Section 2: Building, evaluating and saving a Model
 
 ### 6. Python NumPy Pandas Matplotlib crash course
 
-Windows PS:
+Folder: _02_06_python_np_pd_plt
 
-```
-cd .\02_06_python_np_pd_plt\
-
-py .\python_np_pd_plt.py
-```
+python_np_pd_plt.py
 
 Input files: storepurchasedata.csv
 
@@ -57,13 +85,9 @@ Input files: _02_06_python_np_pd_plt/storepurchasedata.csv
 
 Output: classifier.pickle, sc.pickle
 
-Windows PS:
+Folder: _02_07_ml_classification
 
-```
-cd ..\_02_07_ml_classification\
-
-py .\ml_pipeline.py 
-```
+ml_pipeline.py
 
 Input files: _02_06_python_np_pd_plt\storepurchasedata.csv
 
@@ -73,13 +97,9 @@ Output: classifier.pickle, sc.pickle
 
 ### 9. Predicting locally with deserialized Pickle objects
 
-Windows PS:
+Folder: _03_09_use_model
 
-```
-cd ..\_03_09_use_model\
-
-py .\use_model.py
-```
+use_model.py
 
 Input files: _02_07_ml_classification\classifier.pickle, _02_07_ml_classification\sc.pickle
     
@@ -95,35 +115,29 @@ Input files: _02_07_ml_classification/classifier.pickle, _02_07_ml_classificatio
 
 ### 11. Flask REST API Hello World
 
-Windows PS:
+Folder: _04_11_flask_hello_world
+
+flask_hello_world.py
+
+Run in Windows Powershell instance:
 
 ```
-cd ..\_04_11_flask_hello_world\
-
-py .\flask_hello_world.py
-```
-
-Run in another Windows Powershell instance:
-
-```
+cd .\_04_11_flask_hello_world
 py .\rest_client.py
 ```
 
 ### 12. Creating a REST API for the Model
 
-Windows PS:
+Folder: _04_12_classifier_rest_service
 
-```
-cd ..\_04_12_classifier_rest_service\
-
-py .\classifier_rest_service.py
-```
+classifier_rest_service.py
 
 Input files: _02_07_ml_classification\classifier.pickle, _02_07_ml_classification\sc.pickle
 
-Run in another Windows Powershell instance:
+Run in Windows Powershell instance:
 
 ```
+cd .\_04_12_classifier_rest_service
 py .\ml_rest_client.py
 ```
 
@@ -153,13 +167,9 @@ https://github.com/Putilova/ml_dl_tweets_sentiment/raw/main/_02_07_ml_classifica
 
 After running classifier_rest_service_on_GCP.py on CGP
 
-Windows PS:
+Folder: _04_14_classifier_rest_service_on_GCP
 
-```
-cd ..\_04_14_classifier_rest_service_on_GCP
-
-py .\ml_rest_client_from_GCP.py
-```
+ml_rest_client_from_GCP.py
 
 url = 'http://{External_IP}:8005/model'
 
@@ -225,13 +235,9 @@ Input files: https://github.com/Putilova/ml_dl_tweets_sentiment/raw/main/_02_07_
 
 https://github.com/Putilova/ml_dl_tweets_sentiment/raw/main/_05_20_save_export_reload_pytorch_models/customer_buy_state_dict.zip
 
-Windows PS:
+Folder: _05_21_pytorch_flask
 
-```
-cd ..\_05_21_pytorch_flask
-
-py .\ml_rest_client_pytorch.py
-```
+ml_rest_client_pytorch.py
 
 Postman request: use_pytorch_model_on_google_cloud
 
@@ -382,5 +388,98 @@ _06_37_pytorch_serverlesstext_classifier_pytorch_1, _06_37_pytorch_serverless/tf
 
 Postman request: use_pytorch_nlp_model_on_google_cloud_functions_serverless
 
+## Section 7: Deploying models on browser using JavaScript and TensorFlow.js
 
-to be continued
+### 40. JavaScript crash course (optional)
+
+Folder: 07_40_javascript-crash-course
+
+
+
+### 41. Adding TensforFlow.js to a web page
+
+Folder: _07_41_tfjs1
+
+
+
+### 42. Basic tensor operations using TensorFlow.js
+
+Folder: _07_42_tfjs2
+
+
+
+### 43. Deploying Keras model on a web page using TensorFlow.js
+
+Folder: _07_43_tfjs4
+
+
+
+## Section 8: Model as a mathematical formula & Model as code
+
+### 44. Deriving formula from a Linear Regression Model
+
+Folder: _08_44_linear_regression
+
+linear_regression.py
+
+Input files: houseprice.csv
+
+Output: Figure 1
+
+### 45. Model as code
+
+Folder: _08_45_model_as_code
+
+another_python_app.py
+
+Input files: house_price_predictor.py
+
+house_price_predictor_2.py
+
+## Section 9: Model in Database
+
+### 46. Storing and retrieving models from a database using Colab, Postgres and psycopg2
+
+Folder: _09_46_models_in_db
+
+
+
+### 47. Creating a local model store with PostgreSQL
+
+Folder: _09_47_local_model_store
+
+Execute in database workbench:
+
+create_model_table_local.sql
+
+train_and_store_in_db.py
+
+Input files: storepurchasedata.csv
+
+use_models_from_db.py
+
+## Section 10: MLOps and MLflow
+
+### 50. Tracking Model training experiments with MLfLow
+
+Folder: _10_50_ml_pipeline_mlfow
+
+
+
+### 52. Running MLflow on Colab
+
+Folder: _10_52_running_mlflow_on_colab
+
+
+
+### 53. Tracking PyTorch experiments with MLflow
+
+Folder: _10_53_mlflow_pytorch
+
+
+
+### 54. Deploying Models with MLflow
+
+Folder: _10_54_mlflow-deploy
+
+

@@ -1,0 +1,37 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+ </head>
+ <body>
+     <script>
+         console.log(tf.version)
+         console.log(tf.version.tfjs)
+
+         let var1 = tf.tensor2d([[10,20],[30,40]])
+
+         var1.print()
+
+         let var2 = tf.tensor2d([[1,2],[3,4]])
+        
+         var2.print()
+
+         let var3
+
+         var3 = tf.add(var1,var2)
+
+         var3.print()
+         console.log(var3.dtype)
+         console.log(var3.shape)
+
+
+
+
+        
+     </script>
+
+ </body>
+ </html>
