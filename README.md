@@ -19,7 +19,7 @@ Twitter developer account.
 
 ## To start: Creating python environment
 
-###  in Windows PS:
+###  in Windows PS
 
 Create virtual environment in user's folder:
 ```
