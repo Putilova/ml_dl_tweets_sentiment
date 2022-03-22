@@ -61,6 +61,8 @@ conda deactivate
 env remove -n nlp_course
 ```
 
+Change environment in Spyder:
+
 Spyder > Preferences > Python interpreter > Use the following Python interpreter > C:\Users\admin\Anaconda3\envs\nlp_course\python.exe
 
 ## Section 2: Building, evaluating and saving a Model
