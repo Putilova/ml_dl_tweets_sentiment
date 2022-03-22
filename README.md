@@ -17,8 +17,11 @@ Twitter developer account.
 
 
 
-## To start: Creating python environment in Windows PS
+## To start: Creating python environment
 
+###  in Windows PS:
+
+Create virtual environment in user's folder:
 ```
 C:\Users\admin> 
 
@@ -29,9 +32,36 @@ virtualenv nlp_course
 .\.nlp_course\Scripts\Activate.ps1
 
 pip install scipy numpy pandas sklearn matplotlib pickle requests
-
-cd .\"Google Drive"\Github\ml_dl_tweets_sentiment
 ```
+Deactivate or delete:
+
+```
+deactivate
+
+rm -r .nlp_course
+```
+
+### in Anaconda Powershell Prompt
+
+```
+conda create -n nlp_course
+
+conda env list
+
+conda activate nlp_course
+
+conda install scipy numpy pandas sklearn matplotlib pickle requests
+```
+
+Deactivate or delete:
+
+```
+conda deactivate
+
+env remove -n nlp_course
+```
+
+Spyder > Preferences > Python interpreter > Use the following Python interpreter > C:\Users\admin\Anaconda3\envs\nlp_course\python.exe
 
 ## Section 2: Building, evaluating and saving a Model
 
