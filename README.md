@@ -30,7 +30,7 @@ virtualenv nlp_course
 
 .\.nlp_course\Scripts\Activate.ps1
 
-pip install scipy numpy pandas sklearn matplotlib pickle requests
+pip install scipy numpy pandas sklearn matplotlib pickle requests tensorflow tensorflowjs
 ```
 Deactivate or delete:
 
@@ -404,7 +404,12 @@ Folder: _07_43_tfjs4
 tf3_keras_age_salary_tfjs.ipynb
 
 Input files: _05_20_save_export_reload_pytorch_models/storepurchasedata_large.csv
+
 Output: customer_behavior_model/1 , customermodel.zip, model.json
+
+tfjsdemo.html
+
+Input files: model.json, https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js
 
 ## Section 8: Model as a mathematical formula & Model as code
 

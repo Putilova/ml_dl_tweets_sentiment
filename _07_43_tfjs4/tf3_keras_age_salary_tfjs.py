@@ -11,7 +11,7 @@ import numpy as np
 import pandas as pd
 import tensorflow as tf
 
-dataset = pd.read_csv('https://raw.githubusercontent.com/futurexskill/ml-model-deployment/main/storepurchasedata_large.csv')
+dataset = pd.read_csv('..\_05_20_save_export_reload_pytorch_models\storepurchasedata_large.csv')
 
 dataset.head()
 
@@ -49,18 +49,21 @@ accuracy
 model.summary()
 
 prediction1 = model.predict(sc.transform(np.array([[42,50000]])))[:,1]
- prediction1
+print("prediction 1")
+print(prediction1)
 
 predict2 = model.predict(sc.transform(np.array([[20,40000]])))[:,1]
-predict2
+print("prediction 2")
+print(predict2)
 
-model.save('customer_behavior_model/1')
+#model.save('customer_behavior_model/1')
 
-!ls
+#!ls
 
-!ls customer_behavior_model/1
+#!ls customer_behavior_model/1
 
-from tensorflow.keras.models import load_model
+
+"""from tensorflow.keras.models import load_model
 
 cust_model = load_model('customer_behavior_model/1/')
 
@@ -72,31 +75,31 @@ predict4
 
 sc.transform(np.array([[20,40000]]))
 
-sc.transform(np.array([[42,50000]]))
+sc.transform(np.array([[42,50000]]))"""
 
-!ls
+#!ls
 
-!zip -r customermodel.zip customer_behavior_model
+#!zip -r customermodel.zip customer_behavior_model
 
-!ls
+#!ls
 
-from google.colab import files
+#from google.colab import files
 
-!pip install tensorflowjs
+#!pip install tensorflowjs
 
 import tensorflowjs as tfjs
 
 tfjs.converters.save_keras_model(model, "/content/")
 
-!ls
+#!ls
 
-!cat model.json
+#!cat model.json
 
-from google.colab import files
+#from google.colab import files
 
-files.download('model.json')
+#files.download('model.json')
 
-!ls
+#!ls
 
-files.download('group1-shard1of1.bin')
+#files.download('group1-shard1of1.bin')
 
