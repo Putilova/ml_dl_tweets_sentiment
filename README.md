@@ -30,7 +30,19 @@ virtualenv nlp_course
 
 .\.nlp_course\Scripts\Activate.ps1
 
-pip install scipy numpy pandas sklearn matplotlib pickle requests tensorflow tensorflowjs
+ppip install numpy
+
+pip install pandas
+
+pip install sklearn
+
+pip install matplotlib
+
+pip install requests
+
+pip install tensorflow
+
+pip install tensorflowjs
 ```
 Deactivate or delete:
 
@@ -49,7 +61,24 @@ conda env list
 
 conda activate nlp_course
 
-conda install scipy numpy pandas sklearn matplotlib pickle requests
+conda install -c anaconda pip
+
+conda install spyder-kernels
+
+pip install numpy
+
+pip install pandas
+
+pip install sklearn
+
+pip install matplotlib
+
+pip install requests
+
+pip install tensorflow
+
+pip install tensorflowjs
+
 ```
 
 Deactivate or delete:
@@ -57,7 +86,7 @@ Deactivate or delete:
 ```
 conda deactivate
 
-env remove -n nlp_course
+conda env remove -n nlp_course
 ```
 
 Change environment in Spyder:
@@ -421,8 +450,6 @@ linear_regression.py
 
 Input files: houseprice.csv
 
-Output: Figure 1
-
 ### 45. Model as code
 
 Folder: _08_45_model_as_code
@@ -432,6 +459,8 @@ another_python_app.py
 Input files: house_price_predictor.py
 
 house_price_predictor_2.py
+
+Output: model_output.txt
 
 ## Section 9: Model in Database
 

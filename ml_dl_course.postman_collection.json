@@ -101,7 +101,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"sentence\": \"mediocre by India in the match\"\r\n}",
+					"raw": "{\r\n    \"sentence\": \"mediocre performance by India in the match\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -130,7 +130,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"sentence\": \"mediocre by India in the match\"\r\n}",
+					"raw": "{\r\n    \"sentence\": \"mediocre performance by India in the match\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -159,7 +159,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"sentence\": \"mediocre by India in the match\"\r\n}",
+					"raw": "{\r\n    \"sentence\": \"mediocre performance by India in the match\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -188,7 +188,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"sentence\": \"mediocre by India in the match\"\r\n}",
+					"raw": "{\r\n    \"sentence\": \"mediocre performance by India in the match\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
