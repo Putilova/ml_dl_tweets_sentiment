@@ -7,7 +7,7 @@ if __name__ == "__main__":
 
     mlflow.set_experiment(experiment_name="mlflow demo")
     
-    training_data = pd.read_csv('storepurchasedata.csv')
+    training_data = pd.read_csv('..\_09_47_local_model_store\storepurchasedata.csv')
     print("loaded training data")
 
     training_data.describe()
@@ -16,7 +16,7 @@ if __name__ == "__main__":
     y = training_data.iloc[:,-1].values
     
     from sklearn.model_selection import train_test_split
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size =.70,random_state=0)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size =.25,random_state=0)
     
     from sklearn.preprocessing import StandardScaler
     sc = StandardScaler()

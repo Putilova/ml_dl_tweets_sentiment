@@ -1,0 +1,4 @@
+artifact_location: file:///C:/Users/admin/Google%20Drive/Github/ml_dl_tweets_sentiment/_10_50_ml_pipeline_mlfow/mlruns/1
+experiment_id: '1'
+lifecycle_stage: active
+name: mlflow demo

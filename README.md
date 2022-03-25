@@ -9,7 +9,10 @@ Sentiment analysis with PyTorch and TensorFlow Keras.
 Flask applications.
 
 Environment and tools:
-Spyder / Windows Power Shell.
+
+Spyder, Visual Studio Code.
+Anaconda Powershell Prompt, Windows Power Shell.
+PostgreSQL (pgAdmin, SQL Shell).
 Google Colab, Google Drive, Google Cloud Platform (Compute Engine - VM instance, Cloud Storage, Cloud Function).
 Ngrok account.
 Twitter developer account.
@@ -43,6 +46,8 @@ pip install requests
 pip install tensorflow
 
 pip install tensorflowjs
+
+pip install psycopg2
 ```
 Deactivate or delete:
 
@@ -63,6 +68,8 @@ conda activate nlp_course
 
 conda install -c anaconda pip
 
+conda install -c anaconda git
+
 conda install spyder-kernels
 
 pip install numpy
@@ -78,6 +85,8 @@ pip install requests
 pip install tensorflow
 
 pip install tensorflowjs
+
+pip install psycopg2
 
 ```
 
@@ -468,15 +477,15 @@ Output: model_output.txt
 
 Folder: _09_46_models_in_db
 
+ml_models_in_db.ipynb
 
+Input files: create_model_table.sql, storepurchasedata.csv
 
 ### 47. Creating a local model store with PostgreSQL
 
 Folder: _09_47_local_model_store
 
-Execute in database workbench:
-
-create_model_table_local.sql
+Run in PostgreSQL Shell: create_model_table_local.sql
 
 train_and_store_in_db.py
 
@@ -484,28 +493,52 @@ Input files: storepurchasedata.csv
 
 use_models_from_db.py
 
+Input files: classifier.pickle, sc.pickle from modelstore.futurex_model_catalog
+
 ## Section 10: MLOps and MLflow
 
 ### 50. Tracking Model training experiments with MLfLow
 
 Folder: _10_50_ml_pipeline_mlfow
 
+Run folowing python script in Anaconda PS Prompt under _10_50_ml_pipeline_mlfow:
 
+ml_pipeline_mlfow.py
+
+Input files: _09_47_local_model_store\storepurchasedata.csv
+
+Output: mlruns/1 (the experiment folder wil be created inside _10_50_ml_pipeline_mlfow)
+
+To see created experiment in MLflow user interface run in another instance of Anaconda PS Prompt under _10_50_ml_pipeline_mlfow:
+
+```
+mlflow ui
+```
 
 ### 52. Running MLflow on Colab
 
 Folder: _10_52_running_mlflow_on_colab
 
+running_mlflow_on_colab.ipynb
 
+Input files: _09_47_local_model_store\storepurchasedata.csv
+
+Output: mlruns/1
 
 ### 53. Tracking PyTorch experiments with MLflow
 
 Folder: _10_53_mlflow_pytorch
 
+running_mlflow_on_colab2.ipynb
 
+Input files: _09_47_local_model_store\storepurchasedata.csv
+
+Output: mlruns/1
 
 ### 54. Deploying Models with MLflow
 
 Folder: _10_54_mlflow-deploy
 
+ml_rest_client_mlflow.py
 
+Instructions in ..

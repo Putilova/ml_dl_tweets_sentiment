@@ -1,0 +1,4 @@
+artifact_location: file:///content/drive/MyDrive/Github/ml_dl_tweets_sentiment/_10_52_mlflow_pytorch/mlruns/2
+experiment_id: '2'
+lifecycle_stage: active
+name: mlflow pytorch demo

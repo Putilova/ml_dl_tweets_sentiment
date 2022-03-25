@@ -1,7 +1,9 @@
 import psycopg2
+import pickle
+import numpy as np
 
 connection = psycopg2.connect(user='postgres',
-                              password='admin',
+                              password='password',
                               host='localhost',
                               database='postgres')
 

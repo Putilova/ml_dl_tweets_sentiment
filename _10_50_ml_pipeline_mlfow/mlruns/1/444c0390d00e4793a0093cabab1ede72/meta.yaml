@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/admin/Google%20Drive/Github/ml_dl_tweets_sentiment/_10_50_ml_pipeline_mlfow/mlruns/1/444c0390d00e4793a0093cabab1ede72/artifacts
+end_time: 1648158936260
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+name: ''
+run_id: 444c0390d00e4793a0093cabab1ede72
+run_uuid: 444c0390d00e4793a0093cabab1ede72
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1648158932420
+status: 3
+tags: []
+user_id: admin

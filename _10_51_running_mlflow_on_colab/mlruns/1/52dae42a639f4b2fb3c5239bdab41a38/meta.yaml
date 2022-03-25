@@ -1,0 +1,15 @@
+artifact_uri: file:///content/drive/MyDrive/Github/ml_dl_tweets_sentiment/_10_51_running_mlflow_on_colab/mlruns/1/52dae42a639f4b2fb3c5239bdab41a38/artifacts
+end_time: 1648233643617
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+name: ''
+run_id: 52dae42a639f4b2fb3c5239bdab41a38
+run_uuid: 52dae42a639f4b2fb3c5239bdab41a38
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1648233607156
+status: 3
+tags: []
+user_id: root

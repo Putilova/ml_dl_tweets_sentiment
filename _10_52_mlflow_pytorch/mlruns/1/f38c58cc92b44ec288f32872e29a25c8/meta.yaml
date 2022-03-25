@@ -1,0 +1,15 @@
+artifact_uri: file:///content/drive/MyDrive/Github/ml_dl_tweets_sentiment/_10_52_mlflow_pytorch/mlruns/1/f38c58cc92b44ec288f32872e29a25c8/artifacts
+end_time: 1648233236047
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+name: ''
+run_id: f38c58cc92b44ec288f32872e29a25c8
+run_uuid: f38c58cc92b44ec288f32872e29a25c8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1648233220651
+status: 3
+tags: []
+user_id: root

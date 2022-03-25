@@ -35,17 +35,15 @@ pickle_sc_string = pickle.dumps(sc)
 
 model_insert_sql = "INSERT INTO modelstore.futurex_model_catalog VALUES(%s, %s, %s)"
 
-insert_tuple = (1, 'classifier', pickle_classifier_string)
-
 
 connection = psycopg2.connect(user='postgres',
-                              password='admin',
+                              password='password',
                               host='localhost',
                               database='postgres')
 
 cursor = connection.cursor()
 
-
+insert_tuple = (1, 'classifier', pickle_classifier_string)
 
 cursor.execute(model_insert_sql, insert_tuple)
 
