@@ -1,7 +1,7 @@
 import json
 import requests
 
-url = 'http://127.0.0.1:1244/invocations'
+url = 'http://127.0.0.1:5000/invocations'
 headers = {'Content-Type' : 'application/json'}
 
 request_data = json.dumps({"columns":["age", "salary"],"data":[[42, 50000]]})

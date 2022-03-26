@@ -1,1 +1,1 @@
-mlflow models serve -m C:\Users\engin\ml\mlruns\1\71a82d33a9ae4d5a834c42d56ce61163\artifacts\model -p 5000
+mlflow models serve -m 'C:\Users\admin\Google Drive\Github\ml_dl_tweets_sentiment\_10_50_ml_pipeline_mlfow\mlruns\1\444c0390d00e4793a0093cabab1ede72\artifacts\model' -p 5000

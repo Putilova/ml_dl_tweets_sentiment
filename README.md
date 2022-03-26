@@ -4,9 +4,10 @@ This repo contains excercises from the "Machine Learning Deep Learning model dep
 
 Some skills from the course: 
 
-Classification models with Scikit-learn.
+Classification models. 
 Sentiment analysis with PyTorch and TensorFlow Keras. 
-Flask applications.
+Deploying ML models.
+Training and deployment with MLfLow.
 
 Environment and tools:
 
@@ -16,7 +17,6 @@ PostgreSQL (pgAdmin, SQL Shell).
 Google Colab, Google Drive, Google Cloud Platform (Compute Engine - VM instance, Cloud Storage, Cloud Function).
 Ngrok account.
 Twitter developer account.
-
 
 
 ## To start: Creating python environment
@@ -541,4 +541,4 @@ Folder: _10_54_mlflow-deploy
 
 ml_rest_client_mlflow.py
 
-Instructions in ..
+Instructions in mlflow_serve.txt
